@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <style>
+      #padre{
+        width: 100%;
+        height: 50px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    <button onclick="calcular()">Calcular</button><br>
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+    <div id="example"></div>
+    <div id="example2"></div>
+    <div id="padre">
+      <button id="hijo">Haz clic aquí</button>Exterior
+    </div>
+    <button id="calcular2">calcular 2</button>
+    <a href="http://google.es" id="enlace">Google</a>
+
+    <script>
+      function calcular() {
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+        const suma = numero1 + numero2;
+        const producto = numero1 * numero2;
+        let mayor;
+        if (numero1 > numero2) {
+          mayor = numero1;
+        } else if (numero2 > numero1) {
+          mayor = numero2;
+        } else {
+          mayor = "Los números son iguales";
+        }
+
+        document.getElementById("suma").innerText = suma;
+        document.getElementById("producto").textContent = producto;
+        document.getElementById("mayor").textContent = mayor;
+        
+        const element = document.getElementById('example');
+        element.textContent = 'Este es un ejemplo <strong> de texto </strong>.';
+        const element2 = document.getElementById('example2');
+        element2.innerHTML = 'Este es un ejemplo <strong> de texto </strong>.';
+      }
+
+const calcular2= document.getElementById('calcular2');    
+calcular2.addEventListener('click', calcular);
+
+const padre = document.getElementById('padre');
+const hijo = document.getElementById('hijo');
+padre.addEventListener('click', function(event) {
+  console.log('Se hizo clic en el elemento padre');
+  console.log(padre.textContent);
+});
+  hijo.addEventListener('click', function(event) {
+   /* event.stopPropagation();  */
+  console.log('Se hizo clic en el elemento hijo');
+});
+const enlace = document.getElementById('enlace');
+enlace.addEventListener('click', function(event) {
+  event.preventDefault();
+  console.log('Hiciste clic en el enlace.');
+});
+      
+
+    </script>
+  </body>
+</html>

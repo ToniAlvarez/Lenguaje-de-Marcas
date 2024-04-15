@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <label>Primer número: <input type="number" id="numero1" /></label><br />
+    <label>Segundo número: <input type="number" id="numero2" /></label><br />
+    <button onclick="calcular()">Calcular</button><br />
+    <div> Mira en la consola al darle a calcular</div>
+   
+    <script>
+      function calcular() {
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+        console.log(Number(numero1));
+        console.log(String(numero1));
+        console.log(Boolean(numero1));
+        let numero5 = 42;
+        let string1 = numero5.toString();
+        console.log(typeof string1); // output: string
+
+        let string2 = "42.6";
+        let numero6 = parseInt(string2);
+        console.log(typeof numero6 + " " + numero6); // output: number
+
+        let string3 = "3.1416";
+        let numero7 = parseFloat(string3);
+        console.log(typeof numero7 + " " + numero7); // output: number
+
+        let string4 = "1010";
+        let numero8 = parseInt(string4, 2);
+
+        console.log(
+          typeof numero8 + string4 + "Este numero es binario" + numero8
+        ); // output: number. Este numero se ha pasadoa binario
+      }
+
+      console.log(Number(numero1));
+      let day = "Monday";
+
+      switch (day) {
+        case "Monday":
+          console.log("Today is Monday");
+          break;
+        case "Tuesday":
+          console.log("Today is Tuesday");
+          break;
+        case "Wednesday":
+          console.log("Today is Wednesday");
+          break;
+        default:
+          console.log("Today is not Monday, Tuesday, or Wednesday");
+          break;
+      }
+      let number = 5;
+
+if (number > 0) {
+  console.log("El número es positivo");
+} else {
+  console.log("El número es negativo o cero");
+}
+
+
+if (number > 0) {
+  console.log("El número es positivo");
+} else if (number < 0) {
+  console.log("El número es negativo");
+} else {
+  console.log("El número es cero");
+}
+for (let i = 0; i < 5; i++) {
+  console.log("El valor de i es " + i);
+}
+for (let i = 1; i <= 3; i++) {
+  console.log("Iteración " + i);
+  for (let j = 1; j <= 2; j++) {
+    console.log("   Sub-iteración " + j + " de la iteración " + i);
+  }
+}
+
+    </script>
+  </body>
+</html>

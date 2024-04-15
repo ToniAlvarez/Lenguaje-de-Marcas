@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabla multiplicar</title>
+    <style>
+      div {
+        display: inline-block;
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="tabla-multiplicar">Tabla de multiplicar</p>
+    <label>Número: <input type="number" id="numero" /></label><br />
+    <button onclick="calcular()">Calcular</button><br />
+    <div id="resultado"></div>
+    <!--         <script>
+      function calcular() {
+        const numero = Number(document.getElementById("numero").value);
+        for (let i = 0; i <= 9; i++) {
+          document.getElementById("resultado").innerHTML += numero +" X " + i + " = "+ numero *i + "<br>";
+      }
+    }
+    </script> -->
+    <!--     <script>
+      function calcular() {
+        const numero = Number(document.getElementById("numero").value);
+        const resultado = document.getElementById("resultado");
+
+        for (let i = 0; i <= 9; i++) {
+          const texto = document.createTextNode(numero + " X " + i);
+          const saltoDeLinea = document.createElement("br");
+          resultado.appendChild(texto);
+          resultado.appendChild(saltoDeLinea);
+        }
+      }
+    </script> -->
+    <!--  <script>
+      function calcular() {
+        const numero = Number(document.getElementById("numero").value);
+        const resultado = document.getElementById("resultado");
+        const saltoDeLinea = document.createElement("br");
+        for (let i = 0; i <= 9; i++) {
+          resultado.innerHTML += numero + " X " + i + " = " + numero*i;
+          resultado.appendChild(saltoDeLinea);
+        }
+      }
+    </script> -->
+     <script>
+      function calcular() {
+        const numero = Number(document.getElementById("numero").value);
+        const resultadoId = "resultado" + numero;
+        const resultadoElement = document.createElement("div");
+        resultadoElement.id = resultadoId;
+        document.body.appendChild(resultadoElement);
+        for (let i = 0; i <= 10; i++) {
+          resultadoElement.innerHTML += numero + " X " + i + " = " + numero * i + "<br>";
+        }
+      }
+    </script> 
+  </body>
+</html>

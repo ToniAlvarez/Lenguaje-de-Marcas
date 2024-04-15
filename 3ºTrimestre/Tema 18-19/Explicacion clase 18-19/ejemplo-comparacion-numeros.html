@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Comparación numeros</title>
+   
+  </head>
+  <body>
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    <button onclick="calcular()">Calcular</button><br>
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+    <div id="example"></div>
+    <div id="example2"></div>
+    <div id="padre">
+      <button id="hijo">Haz clic aquí</button>Exterior
+    </div>
+    <button id="calcular2">calcular 2</button>
+    <a href="http://google.es" id="enlace">Google</a>
+
+    <script>
+      function calcular() {
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+        const suma = numero1 + numero2;
+        const producto = numero1 * numero2;
+        let mayor;
+        if (numero1 > numero2) {
+          mayor = numero1;
+        } else if (numero2 > numero1) {
+          mayor = numero2;
+        } else {
+          mayor = "Los números son iguales";
+        }
+
+        document.getElementById("suma").innerText = suma;
+        document.getElementById("producto").textContent = producto;
+        document.getElementById("mayor").textContent = mayor;
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de window.getComputedStyle y getAttribute</title>
+    <style>
+        /* Estilo para cambiar el color de texto */
+        .texto-verde {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Creamos un párrafo con un estilo de color -->
+    <p id="Texto1" class="texto-verde">Este es un texto de ejemplo con clase.</p>
+    <p id="Texto2" style="color:blue">Este es un texto de ejemplo con atributo style.</p>
+    
+    <script>
+        // Seleccionamos el párrafo por su id
+        let Texto1 = document.getElementById("Texto1");
+        let Texto2  = document.getElementById("Texto2");
+        
+        // Usamos window.getComputedStyle para obtener el color de texto aplicado al párrafo
+        let colorTexto1= window.getComputedStyle(Texto1).color;
+        
+        // Usamos getAttribute para obtener el valor del atributo "style" del párrafo
+        let colorTexto2 = Texto2.getAttribute("style");
+        
+        // Imprimimos los resultados en la consola
+        console.log("Color de texto obtenido con getComputedStyle(): " + colorTexto1);
+        console.log("Valor del atributo 'color' obtenido con getAttribute(): " + colorTexto2);
+    </script>
+</body>
+</html>

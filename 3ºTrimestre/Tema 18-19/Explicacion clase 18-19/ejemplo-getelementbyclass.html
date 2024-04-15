@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo getElementsByClassName</title>
+</head>
+<body>
+    <!-- Creamos algunos elementos con la clase "ejemplo" -->
+    <div class="ejemplo">Elemento 1</div>
+    <div class="otra-clase">Elemento 2</div>
+    <div class="ejemplo">Elemento 3</div>
+    <div class="ejemplo">Elemento 4</div>
+    
+    <script>
+        // Seleccionamos todos los elementos con la clase "ejemplo"
+        var elementos = document.getElementsByClassName("ejemplo");
+
+        // Imprimimos la colección de elementos
+        console.log(elementos);
+
+        // Iteramos sobre la colección de elementos
+        for (var i = 0; i < elementos.length; i++) {
+            // Accedemos a cada elemento individualmente
+            var elemento = elementos[i];
+            
+            // Imprimimos el contenido de cada elemento
+            console.log(elemento.innerHTML);
+        }
+    </script>
+</body>
+</html>

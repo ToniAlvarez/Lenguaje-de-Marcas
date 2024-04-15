@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabla multiplicar</title>
+  </head>
+  <body>
+    <div id="tabla-multiplicar"></div>
+
+    <script>
+      // Seleccionamos el elemento donde se mostrará la tabla
+      const tablaMultiplicar = document.getElementById("tabla-multiplicar");
+
+      // Creamos la tabla y sus elementos
+      const tabla = document.createElement("table");
+      const encabezado = document.createElement("thead");
+      const cuerpoTabla = document.createElement("tbody");
+
+      // Creamos el encabezado de la tabla
+      const filaEncabezado = document.createElement("tr");
+      for (let i = 0; i <= 9; i++) {
+        const celdaEncabezado = document.createElement("th");
+        celdaEncabezado.textContent = i;
+        filaEncabezado.appendChild(celdaEncabezado);
+      }
+      encabezado.appendChild(filaEncabezado);
+      tabla.appendChild(encabezado);
+
+      // Creamos las filas y celdas de la tabla
+      for (let i = 0; i <= 9; i++) {
+        const fila = document.createElement("tr");
+        for (let j = 0; j <= 9; j++) {
+          const celda = document.createElement("td");
+          if (j === 0) {
+            celda.textContent = i;
+          } else {
+            celda.textContent = i * j;
+          }
+          fila.appendChild(celda);
+        }
+        cuerpoTabla.appendChild(fila);
+      }
+      tabla.appendChild(cuerpoTabla);
+
+      // Agregamos la tabla al elemento HTML seleccionado
+      tablaMultiplicar.appendChild(tabla);
+    </script>
+  </body>
+</html>
