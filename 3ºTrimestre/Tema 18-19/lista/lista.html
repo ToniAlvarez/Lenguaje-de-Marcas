@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="lista.css">
+<title>Lista de productos</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="datos" id="datos">
+        <h2>Producto para añadir </h2>
+        <label for="producto">Producto:</label>
+        <br>
+        <input type="text" id="producto" placeholder="Producto" value="patatas">
+        <br>
+        <label for="precio">Precio:</label><br><input type="number" id="precio" placeholder="Precio">
+        <br>
+        <label for="cantidad">Cantidad:</label>
+        <br>
+        <input type="number" id="cantidad" placeholder="Cantidad" value="2">
+        <br>
+        <button id="botonAdd">Añadir</button>
+        
+    </div>
+    <div class="lista" id="lista">
+        <h2>lista</h2>
+        <!-- El sigiente div es un ejemplo, lo puedes eliminar al final-->
+        <div class="lista-item"><span>(ejemplo)Manzanas: Cantidad 230 subtotal: </span> <span> 500</span>€</div>
+    </div>
+    <div class="total" id="total">
+        <h2>Total</h2>
+        <div> Suma Total: <span  id="sumaTotal">0</span></div>
+    </div>
+</div>
+
+<!-- Aqui debes añadir el archivo del codigo javascript-->
+<script src="lista.js">
+    
+
+</script>
+
+
+
+</body>
+</html>
+
