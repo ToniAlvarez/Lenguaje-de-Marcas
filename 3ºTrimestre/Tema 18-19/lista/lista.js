@@ -34,3 +34,5 @@ function actualizarTotal(nuevoTotal){
     let totalAnterior = parseFloat(sumaTotal.textContent);
     sumaTotal.textContent = (totalAnterior+nuevoTotal).toFixed(2);
 }
+
+
