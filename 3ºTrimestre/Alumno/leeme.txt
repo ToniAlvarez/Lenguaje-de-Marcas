@@ -1,0 +1,24 @@
+
+
+
+
+1.- Separar el codigo en archivos independientes HTML, CSS y JS
+2.- El juego tiene tres grandes fallos. 
+Debes detectarlos, explicar en qué consisten y hacer el juego funcional
+
+3.- Comentar las lineas de código javascript
+
+4.- Incluir las mejoras
+
+Valoración:
+
+    Detectar los fallos y dejar el juego funcional 4 puntos
+    Comentar las lineas de código 1 punto
+    Titulo y Control de turno 1 punto
+    Sustitucion de  colores por imagen 1 punto
+    Boton de reset y Boton de otra partida 1
+    Resaltar la linea ganadora 1
+    Agregar los contadores de puntos 1 
+    Mostrar Resultados en ventana modal 1
+
+

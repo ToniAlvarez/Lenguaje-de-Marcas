@@ -1,5 +1,5 @@
 PokeDAW{
-  background-image:url(/Tema10/tarea-10/fotos-pokemon/fondopantallapokemon.jpg);
+  background-image:url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondopantallapokemon.jpg);
   background-size:contain;
 }
 Carta {
@@ -11,7 +11,7 @@ Carta {
 }
 
 PokemonPlanta {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondoplanta.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondoplanta.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -25,7 +25,7 @@ PokemonPlanta {
 }
 
 PokemonElectrico {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondoelectrico.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondoelectrico.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -37,7 +37,7 @@ PokemonElectrico {
   color: black;
 }
 PokemonFuego {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondofuego.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondofuego.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -49,7 +49,7 @@ PokemonFuego {
   color: black;
 }
 PokemonAgua {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondoagua.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondoagua.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -61,7 +61,7 @@ PokemonAgua {
   color: black;
 }
 PokemonVolador {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondovolador.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondovolador.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -73,7 +73,7 @@ PokemonVolador {
   color: black;
 }
 PokemonPsiquico {
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fondopsiquico.jpg);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fondopsiquico.jpg);
   background-size: cover;
   display: block;
   padding:2%;
@@ -203,7 +203,7 @@ PuntosVida {
 
 
 imagen[foto="bulbasur"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/bulbasur.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/bulbasur.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -216,7 +216,7 @@ imagen[foto="bulbasur"]{
 }
 
 imagen[foto="pikachu"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/pikachu.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/pikachu.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -228,7 +228,7 @@ imagen[foto="pikachu"]{
   background-color: rgb(226, 198, 74);
 }
 imagen[foto="charmander"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/charmander.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/charmander.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -240,7 +240,7 @@ imagen[foto="charmander"]{
   background-color: rgb(179, 34, 34);
 }
 imagen[foto="charizard"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/charizard.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/charizard.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -252,7 +252,7 @@ imagen[foto="charizard"]{
   background-color: rgb(179, 34, 34);
 }
 imagen[foto="blastoise"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/blastoise.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/blastoise.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -265,7 +265,7 @@ imagen[foto="blastoise"]{
 }
 
 imagen[foto="venusaur"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/venusaur.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/venusaur.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -277,7 +277,7 @@ imagen[foto="venusaur"]{
   background-color: rgb(22, 77, 9);
 }
 imagen[foto="jolteon"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/jolteon.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/jolteon.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -288,7 +288,7 @@ imagen[foto="jolteon"]{
   border-style:groove;
   background-color: rgb(226, 198, 74);}
 imagen[foto="lapras"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/lapras.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/lapras.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -299,7 +299,7 @@ imagen[foto="lapras"]{
   border-style:groove;
   background-color: rgb(84, 106, 202);}
 imagen[foto="flareon"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/flareon.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/flareon.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -310,7 +310,7 @@ imagen[foto="flareon"]{
   border-style:groove;
   background-color: rgb(179, 34, 34);}
 imagen[foto="victreebrel"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/victreebel.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/victreebel.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -322,7 +322,7 @@ imagen[foto="victreebrel"]{
   background-color: rgb(22, 77, 9);
 }
 imagen[foto="pidgeot"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/pidgeot.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/pidgeot.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -334,7 +334,7 @@ imagen[foto="pidgeot"]{
   background-color: rgb(71, 186, 231);
 }
 imagen[foto="fearow"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/fearow.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/fearow.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -348,7 +348,7 @@ imagen[foto="fearow"]{
 
 
 imagen[foto="pidgeotto"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/pidgeotto.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/pidgeotto.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -360,7 +360,7 @@ imagen[foto="pidgeotto"]{
   background-color: rgb(71, 186, 231);
 }
 imagen[foto="electrike"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/electrike.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/electrike.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -372,7 +372,7 @@ imagen[foto="electrike"]{
   background-color: rgb(226, 198, 74);
 }
 imagen[foto="exeggcute"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/exeggcute.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/exeggcute.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -384,7 +384,7 @@ imagen[foto="exeggcute"]{
   background-color: rgb(22, 77, 9);
 }
 imagen[foto="alakazam"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/alakazam.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/alakazam.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -396,7 +396,7 @@ imagen[foto="alakazam"]{
   background-color: rgb(155, 57, 155);}
 
 imagen[foto="mewtwo"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/mewtwo.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/mewtwo.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -409,7 +409,7 @@ imagen[foto="mewtwo"]{
   background-color: rgb(155, 57, 155);
 }
 imagen[foto="abra"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/abra.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/abra.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -421,7 +421,7 @@ imagen[foto="abra"]{
   background-color: rgb(155, 57, 155);
 }
 imagen[foto="espeon"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/espeon.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/espeon.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -434,7 +434,7 @@ imagen[foto="espeon"]{
 }
 
 imagen[foto="bellossom"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/bellossom.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/bellossom.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -447,7 +447,7 @@ imagen[foto="bellossom"]{
 }
 
 imagen[foto="squirtle"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/squirtle.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/squirtle.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -459,7 +459,7 @@ imagen[foto="squirtle"]{
   background-color: rgb(84, 106, 202);}
 
 imagen[foto="spearow"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/spearow.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/spearow.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -472,7 +472,7 @@ imagen[foto="spearow"]{
 }
 
 imagen[foto="dragonite"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/dragonite.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/dragonite.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -484,7 +484,7 @@ imagen[foto="dragonite"]{
   background-color: rgb(71, 186, 231);
 }
 imagen[foto="raichu"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/raichu.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/raichu.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -497,7 +497,7 @@ imagen[foto="raichu"]{
 }
 
 imagen[foto="ponyta"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/ponyta.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/ponyta.png);
   background-size:contain;
   width: 200px;
   height: 200px;
@@ -510,7 +510,7 @@ imagen[foto="ponyta"]{
 }
 
 imagen[foto="hypno"]{
-  background-image: url(/Tema10/tarea-10/fotos-pokemon/hypno.png);
+  background-image: url(/2ºTrimestre/Tema10/tarea-10/fotos-pokemon/hypno.png);
   background-size:contain;
   width: 200px;
   height: 200px;

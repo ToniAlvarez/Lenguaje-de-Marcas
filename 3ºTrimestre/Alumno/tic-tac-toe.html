@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="tic-tac-toe.css" rel="stylesheet">
+    <script language="JavaScript" src="funciones.js"></script>
+
+    <title>TIC-TAC-TOE</title>
+  </head>
+  <body>
+    <div class="tablero">
+      <div class="casilla" onclick="jugada(1)"></div>
+      <div class="casilla" onclick="jugada(2)"></div>
+      <div class="casilla" onclick="jugada(3)"></div>
+      <div class="casilla" onclick="jugada(4)"></div>
+      <div class="casilla" onclick="jugada(5)"></div>
+      <div class="casilla" onclick="jugada(6)"></div>
+      <div class="casilla" onclick="jugada(7)"></div>
+      <div class="casilla" onclick="jugada(8)"></div>
+      <div class="casilla" onclick="jugada(9)"></div>
+    </div>
+    <div class="contenedor-botones">
+      <button id="resetButton" onclick="reset()">RESET</button>
+      <button id="otraButton" onclick="otra()">OTRA</button>
+    </div>
+
+
+    <script>
+      let jugador = 1; // La variable jugador controla controla el turno y se guarda en el tablero cuadno hace click
+      let casillas = document.querySelectorAll(".casilla"); // casillas sera un array qeu contine todos los elementos de la clase casilla, se usa para colorearla segun el jugador que ha hecho click
+      let tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+      let ganador = false;
+      let combinaciones = [
+        [0, 1, 2],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ];
+
+      function jugada(num) {
+        if (!ganador && tablero[num - 1] === 0) {
+          tablero[num - 1] = jugador;
+          casillas[num - 1].classList.add("jugador" + jugador);
+          if (comprobarGanador()) {
+            alert("Jugador " + jugador + " ha ganado");
+            ganador = true;
+          } else if (comprobarEmpate()) {
+            alert("Empate");
+            ganador = true;
+          } else {
+            cambiarJugador();
+          }
+        }
+      }
+
+      function reset(){
+        casillas.forEach(function(casilla) {
+          casilla.classList.remove('jugador1', 'jugador2'); // Eliminar clases de jugador
+        });
+        tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0]; // Reiniciar tablero
+        ganador = false; // Reiniciar variable ganador
+      }
+      function otra(){
+
+      }
+
+
+      function cambiarJugador() {
+        jugador = jugador === 1 ? 2 : 1; //esto es un operador ternario. si jugador=1 el valor cambia a 2 y en caso contrario cambia a 1. Conclusion alterna el valor de jugador entre 1 y 2
+      }
+
+      // En esta funcion NO hay ningun error
+      function comprobarGanador() {
+        for (let i = 0; i < combinaciones.length; i++) {
+          const combinacion = combinaciones[i];
+          let ganador = true;
+          for (let j = 0; j < combinacion.length; j++) {
+            const casilla = combinacion[j];
+            if (tablero[casilla] !== jugador) {
+              ganador = false;
+              break;
+            }
+          }
+          if (ganador) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      function comprobarEmpate() {
+        return !tablero.includes(0);
+      }
+    </script>
+  </body>
+</html>
