@@ -19,12 +19,15 @@
       <div class="casilla" onclick="jugada(8)"></div>
       <div class="casilla" onclick="jugada(9)"></div>
     </div>
+
     <div class="contenedor-botones">
       <button id="resetButton" onclick="reset()">RESET</button>
       <button id="otraButton" onclick="otra()">OTRA</button>
     </div>
-
-
+    <div class="contenedor-botones">
+      <div id="contador">0</div>
+      <div id="contador">0</div>
+    </div>
     <script>
       let jugador = 1; // La variable jugador controla controla el turno y se guarda en el tablero cuadno hace click
       let casillas = document.querySelectorAll(".casilla"); // casillas sera un array qeu contine todos los elementos de la clase casilla, se usa para colorearla segun el jugador que ha hecho click
@@ -40,12 +43,21 @@
         [2, 4, 6],
       ];
 
+      let victoriasJugador1 = 0;
+      let victoriasJugador2 = 0;
+
       function jugada(num) {
         if (!ganador && tablero[num - 1] === 0) {
           tablero[num - 1] = jugador;
           casillas[num - 1].classList.add("jugador" + jugador);
           if (comprobarGanador()) {
             alert("Jugador " + jugador + " ha ganado");
+            if (jugador === 1) {
+              victoriasJugador1++;
+            } else {
+              victoriasJugador2++;
+            }
+            actualizarContadores();
             ganador = true;
           } else if (comprobarEmpate()) {
             alert("Empate");
@@ -58,15 +70,25 @@
 
       function reset(){
         casillas.forEach(function(casilla) {
-          casilla.classList.remove('jugador1', 'jugador2'); // Eliminar clases de jugador
+        casilla.classList.remove('jugador1', 'jugador2');
         });
-        tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0]; // Reiniciar tablero
-        ganador = false; // Reiniciar variable ganador
+        tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+        ganador = false; 
       }
       function otra(){
+        casillas.forEach(function(casilla) {
+        casilla.classList.remove('jugador1', 'jugador2');
+        });
+        tablero = [0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+        ganador = false; 
+        victoriasJugador1 = 0;
+        victoriasJugador2 = 0;
 
       }
-
+      function actualizarContadores() {
+        document.getElementById('contadorJugador1').innerText = victoriasJugador1;
+        document.getElementById('contadorJugador2').innerText = victoriasJugador2;
+      }
 
       function cambiarJugador() {
         jugador = jugador === 1 ? 2 : 1; //esto es un operador ternario. si jugador=1 el valor cambia a 2 y en caso contrario cambia a 1. Conclusion alterna el valor de jugador entre 1 y 2

@@ -28,12 +28,13 @@
 .contenedor-botones {
     display: flex; 
     justify-content: center; 
-  }
+}
   
-  #resetButton, #otraButton {
+#resetButton, #otraButton, #contador{
     font-size: x-large;
     border: 1px solid #000;
     height: 50px;
     width: 150px;
     margin: 1px;
-  }
+}
+
