@@ -1,0 +1,18 @@
+.margenExtra {
+  margin-right:200px;
+  margin-left:200px;
+}
+table {
+  width: 73%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #a19e9e;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}

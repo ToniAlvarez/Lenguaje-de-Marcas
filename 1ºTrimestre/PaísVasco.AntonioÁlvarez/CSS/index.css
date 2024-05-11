@@ -1,0 +1,270 @@
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* GENERAL */
+  body {
+    background-color: #ffffff;
+    font-family: Helvetica;
+
+  }
+  .logo {
+    width:80px;
+    height:60px;
+    float:left;
+    margin-right: 30px;
+  }
+  p, li {
+    margin-left: 200px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    word-spacing: 1pt;
+    color: #4d4d4d;
+    text-align: justify;
+  }
+  h1, h2, h3, h5 {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    margin-top: 40pt;
+    font-family: Helvetica;
+  }
+  .subtitulo {
+    font-family: Helvetica;
+    text-align: center;
+    font-size: x-large;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .imagen {
+    margin: 10px;
+    margin-top:50pt;
+  }
+  table {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .columna2 {
+    float:left;
+    width: 50%;
+    text-align: center;
+  }
+  .columna3 {
+    float:right;
+    width: 50%;
+    text-align: justify;
+    text-align: center;
+  }
+  #parrafoColumna1{
+    margin-right: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    word-spacing: 1pt;
+    color: #4d4d4d;
+    text-align: justify;
+  }
+  #parrafoColumna2{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    word-spacing: 1pt;
+    color: #4d4d4d;
+    text-align: justify;
+  }
+  #fondoColumna{
+    background-color:rgb(88, 199, 125);
+    height: 550pt;
+    width: 750pt;
+    color:rgb(0, 0, 0);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top:40pt;
+    text-align: left;
+    font-family: Helvetica;
+
+  }
+/*MENU*/
+/* Color de fondo */
+.menu {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  text-align:left;
+  margin-top:20px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* Links dentro del menu */
+.menu a {
+  float: left; 
+  display: block; 
+  color: black; 
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none; 
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* Links al pasar con el raton*/
+.menu a:hover {
+  background-color: rgb(88, 199, 125);
+  color: rgb(7, 54, 5);
+}
+/* Links en la pagina actual*/
+.menu a.activo {
+  background-color: rgb(0, 156, 70);
+  color: white;
+}
+/* BANNER call to action*/
+.calltoaction {
+  padding: 60px;
+  text-align: center;
+  background-color: rgb(88, 199, 125);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgb(88, 199, 125);
+}
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* ACORDEON */
+  .acordeon {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+/* --------------------------------------------------------------------------------------*/
+/* CONTENEDORES DE LAS 3 IMAGENES */
+.contenedor {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-left: 4pt;
+  margin-top:20pt;
+  margin-bottom:50pt;
+ 
+}
+.image {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 624px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(88, 199, 125);
+}
+.contenedor:hover .overlay {
+  opacity: 1;
+}
+.textoimagenes {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textoimagenes:hover{
+  color: rgb(7, 54, 5);
+}
+/* --------------------------------------------------------------------------------------*/
+/* FOOTER link: https://web-eau.net/en/blog/10-best-footer-html-css-snippets */
+
+
+footer {
+  height: 120px;
+  background-color: rgb(88, 199, 125);
+  color: white;
+  margin-top: 30pt;
+
+}
+
+footer a {
+  float: left; 
+  color: rgb(255, 255, 255); 
+  text-align: right;
+  padding: 20px;
+  text-decoration:underline; 
+  font-size: 15px;
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+footer a:hover{
+  color: rgb(7, 54, 5);
+}
+
+.footerCopy{
+  padding-top: 50pt;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  
+
+}
+
+/* FORMULARIO */
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px rgba(2, 0, 0, 0.1);
+  width: 300px;
+  margin-top:40pt;
+  margin-right: 65%;
+  margin-left: 35%;
+  font-family: 'Helvetica';
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(88, 199, 125);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:rgb(7, 54, 5);
+}

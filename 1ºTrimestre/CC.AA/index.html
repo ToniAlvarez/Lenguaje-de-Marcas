@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Antonio" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<link rel="stylesheet" href="CSS/index.css">
+<!-- MENU -->
+    <nav> 
+        <div class="menu">
+        <img src="Imagenes\logo euskadi.jpg" alt="logo" class="logo">
+        <a class= "activo" href="index.html">INICIO</a>
+        <a href="Contenido\vizcaya.html">VIZCAYA</a>
+        <a href="Contenido/guipuzcoa.html">GUIPÚZCOA</a>
+        <a href="Contenido/alava.html">ÁLAVA</a>
+        <a href="Contenido/historia.html">HISTORIA</a>
+        <a href="Contenido/cultura.html">CULTURA</a>
+        </div>
+    </nav>
+<body>
+<div class="calltoaction">
+    <h1> EUSKAL HERRIA</h1>
+    <p style="text-align: center;">EL TESORO DEL NORTE</p>
+</div>
+<div class="columna2">
+    <h2>¿Donde está el País Vasco?</h2>
+    <p> El <b>País Vasco</b> o Euskadinota (en euskera: Euskal Herria o Euskadi) es una comunidad autónoma española, considerada <b>nacionalidad histórica</b>, situada en el 
+    extremo oriental de la costa del mar Cantábrico, limítrofe con Francia. <b>Se compone de las provincias o territorios históricos de Álava, Guipúzcoa y Vizcaya.</b>
+    Su población es de 2,16 millones de personas; cerca de la mitad vive en el área metropolitana de Bilbao. Limita al este con Navarra y el departamento francés 
+    de Pirineos Atlánticos (región de Nueva Aquitania), al sur con La Rioja y al oeste con la provincia de Burgos (Castilla y León) y Cantabria.</p>
+</div>
+<div class="imagen">
+    <img src="/Imagenes/banner.paisvasco.jpg" height="400px" width="700px" >
+</div>
+<div> <h2> Himno del País Vasco</h2>
+    
+</div>
+<div> 
+    
+</div>
+
+
+
+<div><h3> PROVINCIAS DEL PAÍS VASCO </h3>
+    <div class="contenedor">
+        <a href="/Contenido/vizcaya.html">
+        <img class="image" src="Imagenes/vizcaya1.jpg" width="500px" height="300px">
+        <div class="overlay">
+            <div class="textoimagenes">VIZCAYA</div>
+        </a>
+        </div>
+    </div>
+    <div class="contenedor">
+        <a href="/Contenido/guipuzcoa.html">
+        <img class="image" src="Imagenes/guipuzcoa1.jpg" width="500px" height="300px">
+        <div class="overlay">
+            <div class="textoimagenes">GUIPÚZCOA</div>
+        </a>
+        </div>
+    </div>
+    <div class="contenedor">
+        <a href="/Contenido/alava.html" >
+        <img class="image" src="Imagenes/alava1.jpg" width="500px" height="300px">
+        <div class="overlay" >
+            <div class="textoimagenes">ÁLAVA</div>
+        </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- ACORDEON -->
+<div> 
+<h2>Acordeon</h2>
+<button class="acordeon">Seccion 1</button>
+<div class="panel">
+<p>pruebagreswgw</p>
+</div>
+
+<button class="acordeon">Seccion 2</button>
+<div class="panel">
+<p>pruebaaaa</p>
+</div>
+
+<button class="acordeon">Seccion 3</button>
+<div class="panel">
+<p>pruebaa</p>
+</div>
+<script>
+
+
+var acc = document.getElementsByClassName("acordeon");
+var i;
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.display === "block") {
+    panel.style.display = "none";
+} else {
+    panel.style.display = "block";
+}
+});
+}
+</script>
+</div>
+
+
+</body>
+<footer>
+    <p> PIE DE PAGINA</p>
+</footer>
+</html>

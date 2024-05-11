@@ -1,0 +1,55 @@
+body {
+    background-color:rgb(27, 12, 70);
+    text-align:center;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(255, 255, 255, 0.96); 
+    font-size: large;
+    padding-top: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+a {
+    color:white;
+}
+
+/* Estilo para el formulario */
+form {
+background-color: rgb(33, 41, 116);
+max-width: 500px;
+padding: 20px;
+border: 1px solid #ffffff;
+}
+label {
+display: block;
+margin-bottom: 8px;
+margin-top: 8px;
+text-align: left;
+}
+input {
+    width: 100%;
+}
+/* Estilo para las etiquetas de los campos */
+label {
+display:flow-root;
+margin-bottom: 8px;
+}
+
+/* Estilo para los campos de entrada de texto */
+
+textarea {
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+
+/* Estilo para los botones */
+button {
+background-color: #4caf50;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}

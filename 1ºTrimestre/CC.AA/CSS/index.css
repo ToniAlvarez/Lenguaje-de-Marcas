@@ -1,0 +1,159 @@
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* GENERAL */
+  body {
+    background-color: #ffffff;
+    font-family: Helvetica;
+
+  }
+  .logo {
+    width:80px;
+    height:60px;
+    float:left;
+    margin-right: 30px;
+  }
+  p, li {
+    margin-left: 200px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    word-spacing: 1pt;
+    color: #4d4d4d;
+    text-align: justify;
+  }
+  h1, h2, h3 {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+  }
+ 
+  .imagen {
+    margin: 10px;
+  }
+  table {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+/*MENU*/
+/* Color de fondo */
+.menu {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  text-align:left;
+  margin-top:20px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/* Links dentro del menu */
+.menu a {
+  float: left; 
+  display: block; 
+  color: black; 
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none; 
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* Links al pasar con el raton*/
+.menu a:hover {
+  background-color: rgb(88, 199, 125);
+  color: rgb(7, 54, 5);
+}
+/* Links en la pagina actual*/
+.menu a.activo {
+  background-color: rgb(0, 156, 70);
+  color: white;
+}
+/* BANNER call to action*/
+.calltoaction {
+  padding: 60px;
+  text-align: center;
+  background-image: url(/Imagenes/iloveimg-resized/euskerabanner.jpg);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgb(88, 199, 125);
+}
+
+
+/* --------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
+/* CSS SÓLO DEL INDEX*/
+ .columna2 {
+    float:left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 1.25;
+  }
+
+/* ACORDEON */
+  .acordeon {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+/* --------------------------------------------------------------------------------------*/
+
+.contenedor {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-left: 4pt;
+ 
+}
+
+.image {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 624px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(88, 199, 125);
+}
+.contenedor:hover .overlay {
+  opacity: 1;
+}
+.textoimagenes {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textoimagenes:hover{
+  color: rgb(7, 54, 5);
+}
+    

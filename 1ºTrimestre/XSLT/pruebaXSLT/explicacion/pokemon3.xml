@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="pokemon3.xslt" type="text/xsl"?> 
+<?xml-model href="pokemon.xsd"?>
+<pokeDAW>
+    <pokemon tipo="planta">
+        <nombre numeroPokedex="60">Snivy</nombre>
+        <imagen src="snivy" />
+        <descripcion>Pokemon Snivy</descripcion>
+        <genero>Femenino</genero>
+        <estado>
+            <habilidad destreza="50">Portazo</habilidad>
+            <nivel>6</nivel>
+            <fuerza>3</fuerza>
+            <faseEvolucion>Intermedia</faseEvolucion>
+            <puntosVida>300</puntosVida>
+        </estado>
+    </pokemon><pokemon tipo="fuego">
+    <nombre numeroPokedex="60">Tepig</nombre>
+    <imagen src="tepig" />
+    <descripcion>Pokemon  Tepig</descripcion>
+    <genero></genero>
+    <estado>
+        <habilidad destreza="50">Ascuas</habilidad>
+        <nivel>80</nivel>
+        <fuerza>8</fuerza>
+        <faseEvolucion>Intermedia</faseEvolucion>
+        <puntosVida>600</puntosVida>
+    </estado>
+</pokemon>
+<pokemon tipo="agua">
+    <nombre numeroPokedex="61">Oshawot</nombre>
+    <imagen src="oshawot" />
+    <descripcion>Pokemon Oshawot</descripcion>
+    <genero>Masculino</genero>
+    <estado>
+        <habilidad destreza="30">Hidropulso</habilidad>
+        <nivel>20</nivel>
+        <fuerza>2</fuerza>
+        <faseEvolucion>Final</faseEvolucion>
+        <puntosVida>100</puntosVida>
+    </estado>
+</pokemon>
+</pokeDAW>

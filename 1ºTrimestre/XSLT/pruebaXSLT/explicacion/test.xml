@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="test.xsl"?>
+<?xml-model href="test.xsd"?>
+<raiz>
+    <!-- cuerpo del documento-->
+    <elemento atributo="valor">Contenido</elemento>
+</raiz>

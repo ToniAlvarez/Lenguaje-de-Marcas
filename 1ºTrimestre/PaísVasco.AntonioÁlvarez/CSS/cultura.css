@@ -1,0 +1,13 @@
+.margenExtra {
+    margin-right:200px;
+    margin-left:200px;
+}
+dl {
+    margin-left: 200px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    word-spacing: 1pt;
+    color: #4d4d4d;
+    text-align: justify;
+  }

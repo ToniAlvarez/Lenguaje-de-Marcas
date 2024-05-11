@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ignacio Ramirez" content="Tabla de Multiplicar">
+    <title>Tabla de Multiplicar</title>
+    <style>
+        .tabla {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="tabla-multiplicar">Tablas de multiplicar</p>
+    <label>Número máximo: <input type="number" id="numero" /></label><br />
+    <button onclick="calcular()">Calcular</button><br />
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            const numeroMaximo = Number(document.getElementById("numero").value);
+            const resultadoElement = document.getElementById("resultado");
+            resultadoElement.innerHTML = ""; 
+
+            for (let numero = 1; numero <= numeroMaximo; numero++) {
+                const tablaElement = document.createElement("div");
+                tablaElement.classList.add("tabla");
+
+                tablaElement.innerHTML += numero + " X 0 = 0" + "<br>"; 
+                for (let i = 1; i <= 10; i++) {
+                    tablaElement.innerHTML += numero + " X " + i + " = " + numero * i + "<br>";
+                }
+                
+                resultadoElement.appendChild(tablaElement);
+            }
+        }
+    </script>
+</body>
+</html>
+

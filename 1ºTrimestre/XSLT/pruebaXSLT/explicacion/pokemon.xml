@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet href="prueba.xslt" type="text/xsl"?> 
+<?xml-model href="pokemon.xsd"?>
+<pokeDAW>
+    <pokemon tipo="planta">
+        <nombre numeroPokedex="60">Snivy</nombre>
+        <imagen src="snivy" />
+        <descripcion>Pokemon Snivy</descripcion>
+        <genero>Femenino</genero>
+        <estado>
+            <habilidad destreza="50">Portazo</habilidad>
+            <nivel>6</nivel>
+            <fuerza>6</fuerza>
+            <faseEvolucion>Intermedia</faseEvolucion>
+            <puntosVida>300</puntosVida>
+        </estado>
+    </pokemon>
+</pokeDAW>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ignacio Ramirez" content="Calculadora">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="pantalla">
+          <input type="text" id="resultado" >
+        </div>
+        <div class="teclado">
+          <button onclick="limpiar()">C</button>
+          <button onclick="borrar()">CE</button>
+          <button onclick="operar('/')">÷</button>
+          <button onclick="operar('*')">x</button>
+          <button onclick="agregarNumero('7')">7</button>
+          <button onclick="agregarNumero('8')">8</button>
+          <button onclick="agregarNumero('9')">9</button>
+          <button onclick="operar('-')">-</button>
+          <button onclick="agregarNumero('4')">4</button>
+          <button onclick="agregarNumero('5')">5</button>
+          <button onclick="agregarNumero('6')">6</button>
+          <button onclick="operar('+')">+</button>
+          <button onclick="agregarNumero('1')">1</button>
+          <button onclick="agregarNumero('2')">2</button>
+          <button onclick="agregarNumero('3')">3</button>
+          <button onclick="operar('1entreX')">1/x</button>
+          <button onclick="agregarNumero('0')">0</button>
+          <button onclick="agregarNumero('.')">.</button>
+          <button onclick="operar('raiz')">√</button>
+          <button onclick="operar('potencia')">x²</button>
+          <button onclick="operar('Bin')">Bin</button>
+          <button onclick="operar('Hex')">Hex</button>
+          <button class="igual" onclick="calcular()">=</button>
+
+
+
+        </div>
+      </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Página Principal" content="Inicio de la página web">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<nav> <!-- MENU -->
+    <div class="menu">
+    <img src="CSS/Imagenes/logo euskadi.jpg" alt="logo" class="logo">
+    <a class= "activo" href="index.html">INICIO</a>
+    <a href="Contenido/vizcaya.html">VIZCAYA</a>
+    <a href="Contenido/guipuzcoa.html">GUIPÚZCOA</a>
+    <a href="Contenido/alava.html">ÁLAVA</a>
+    <a href="Contenido/historia.html">HISTORIA</a>
+    <a href="Contenido/cultura.html">CULTURA</a>
+    </div>
+</nav>
+<body>
+<section> <!-- BANNER -->
+    <div class="calltoaction">
+        <h1> EUSKAL HERRIA</h1>
+        <p style="text-align: center;">EL TESORO DEL NORTE</p>
+    </div>
+</section>
+<main><!-- CONTENIDO -->
+    <section>
+        <p class="subtitulo"> <strong>Bienvenidos a la fascinante tierra del <em>País Vasco</em></strong>. Sumérgete en una experiencia única donde la 
+        rica historia, la cultura vibrante y la belleza natural se entrelazan para crear un destino turístico incomparable. Desde 
+        las majestuosas montañas de los <strong><em>Pirineos</em></strong> hasta las pintorescas playas del <strong><em>Golfo de 
+        Vizcaya</em></strong>, el <strong><em>País Vasco</em></strong> ofrece un escenario impresionante que cautiva a cada 
+        visitante.</p>
+
+        <div class="columna2">
+            <h1>¿Qué es el País Vasco?</h1>
+            <p> El <b>País Vasco</b> o Euskadinota (en euskera: Euskal Herria o Euskadi) es una comunidad autónoma española, considerada <b>nacionalidad histórica</b>, situada en el 
+            extremo oriental de la costa del mar Cantábrico, limítrofe con Francia. <b>Se compone de las provincias o territorios históricos de Álava, Guipúzcoa y Vizcaya.</b>
+            Su población es de 2,16 millones de personas; cerca de la mitad vive en el área metropolitana de Bilbao. Limita al este con Navarra y el departamento francés 
+            de Pirineos Atlánticos (región de Nueva Aquitania), al sur con La Rioja y al oeste con la provincia de Burgos (Castilla y León) y Cantabria.</p>
+        </div>
+        <div class="imagen">
+            <img src="CSS/Imagenes/banner.paisvasco.jpg" height="400px" width="700px" >
+        </div>
+    </section>
+    <section><!-- Provincias del País Vasco -->
+        <div><h2> PROVINCIAS DEL PAÍS VASCO </h2>
+            <p>El País Vasco es una región única y cautivadora compuesta por tres provincias 
+            históricas: <strong>Álava, Guipúzcoa y Vizcaya</strong>. Cada una de estas provincias aporta su distintiva personalidad y encanto, 
+            creando un mosaico cultural y geográfico que define la riqueza de esta comunidad autónoma.</p>
+            <div class="contenedor">
+                <a href="Contenido/vizcaya.html">
+                    <img class="image" src="CSS\Imagenes\vizcaya1.jpg" width="500px" height="300px">
+                    <div class="overlay">
+                    <div class="textoimagenes">VIZCAYA</div>
+                </a>
+                </div>
+                </div>
+            <div class="contenedor">
+                <a href="Contenido/guipuzcoa.html">
+                    <img class="image" src="CSS/Imagenes/guipuzcoa1.jpg" width="500px" height="300px">
+                    <div class="overlay">
+                    <div class="textoimagenes">GUIPÚZCOA</div>
+                </a>
+            </div>
+            </div>
+            <div class="contenedor">
+                <a href="Contenido/alava.html" >
+                <img class="image" src="CSS/Imagenes/alava1.jpg" width="500px" height="300px">
+                <div class="overlay" >
+                    <div class="textoimagenes">ÁLAVA</div>
+                </a>
+                </div>
+        </div>
+    </section>
+    <section> <!-- Audio Himno -->
+
+        <h2> Himno del País Vasco</h2>
+        <div class="columna2">
+            <p id="parrafoColumna1"> El pueblo vasco se siente muy orgulloso de su identidad y de su cultura. Por ello, sus símbolos son
+            muy respetados y defendidos. El 29 de abril de 1905, el semanario nacionalista vasco <b>Patria</b> anunció en su portada
+            la adopción de <b>Euzko Abendaren Ereserkia como himno nacional vasco</b>. La primera letra de este himno la escribió Sabino 
+            Arana durante una de sus estancias en la cárcel de Larrinaga en <b>1895</b>.</p>
+        </div> 
+        <div class="columna3">
+            <p id="parrafoColumna2"> Aquí puedes escuchar la última versión del himno del País Vasco. <b>Esta es la versión oficial</b>, con una duración total
+            de 2 minutos y 45 segundos, es utilizada actualmente tanto en los aconteminientos oficiales dentro de la Comunidad Autonoma 
+            como en fiestas y tradiciones populares. </p>
+            <audio controls >
+                <source src="CSS/videosyaudios/himno.mp3" type="audio/mp3">
+                <source src="CSS/videosyaudios/himno.ogg" type="audio/ogg">
+                <br>
+            </audio>
+        </div>
+    </section>
+</div>
+</main>
+<article> <!-- ACORDEON -->
+    <button class="acordeon">Seccion 1</button>
+    <div class="panel">
+    <p>pruebagreswgw</p>
+    </div>
+
+    <button class="acordeon">Seccion 2</button>
+    <div class="panel">
+    <p>pruebaaaa</p>
+    </div>
+
+    <button class="acordeon">Seccion 3</button>
+    <div class="panel">
+    <p>pruebaa</p>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("acordeon");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+    } else {
+        panel.style.display = "block";
+    }
+    });
+    }
+    </script>
+</article>
+<section> <!-- FORMULARIO DE CONTACTO -->
+    <div id="fondoColumna">
+        <br>
+        <form action="#" method="post">
+            <strong> Contáctanos para recibir más información acerca del País Vasco</strong>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+    
+            <label for="apellidos">Apellidos:</label required>
+            <input type="apellidos" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje"required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+</body>
+<footer> <!-- FOOTER-->
+    <section>
+        <p><a href="index.html">Inicio </a><a href="Contenido/vizcaya.html">Vizcaya </a><a href="Contenido/guipuzcoa.html">Guipúzcoa </a>
+        <a href="Contenido/alava.html">Álava </a><a href="Contenido/historia.html">Historia </a><a href="Contenido/cultura.html">Cultura</a></p>
+        <p class="footerCopy"> Antonio Álvarez Moyano © 2023</p>
+    </section>
+</footer>
+</html>

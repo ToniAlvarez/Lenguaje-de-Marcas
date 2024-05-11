@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  width:1100px;
+  margin: 0 auto;
+  text-align: justify;
+  background-color: #eeeeee;
+}
+
+/* Encabezado/Título del logotipo */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #5b9c5d;
+  color: white;
+}
+
+/* Aumentar el tamaño de fuente del encabezado */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Estilo de la barra de navegación superior */
+.navbar {
+  overflow: hidden;
+  background-color: #555050;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.navbar a {
+  float: left;
+  margin-left:8%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Enlace alineado a la derecha */
+.navbar a.right {
+  float: right;
+}
+
+/* Cambiar color al pasar el ratón */
+.navbar a:hover {
+  background-color: #215f23;
+  color: black;
+}
+
+/* Contenedor de columnas */
+.row {  
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+#fondoColumna{
+  height: 550pt;
+  width: 750pt;
+  color:rgb(0, 0, 0);
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top:40pt;
+  text-align: left;
+  font-family: Helvetica;
+}
+/* Crea dos columnas desiguales que se colocan una al lado de la otra */
+/* Barra lateral/columna izquierda */
+.side {
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #fcf3f3;
+  padding: 20px;
+}
+
+/* Columna principal */
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Pie de página */
+.footer {
+  padding: 20px;
+  color:white;
+  text-align: center;
+  background: #5b9c5d;
+}
+
+/* --------------- FORMULARIOS -------------*/
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #215f23;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #215f23;
+
+
+}

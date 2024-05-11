@@ -1,0 +1,14 @@
+.margenExtra {
+  margin-right:200px;
+  margin-left:200px;
+}
+table {
+  border: black 2px none;
+  background-color: antiquewhite;
+  border-style: solid;
+  text-align: center;
+
+}
+td, th {
+  border: rgb(255, 255, 255) 1px hidden;
+}
